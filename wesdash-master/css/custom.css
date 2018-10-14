@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,500,700|Roboto+Slab');
+
+:root {
+	--small-padding: 7px;
+	--medium-padding: 15px;
+	--big-padding: 25px;
+	--transition-duration: 0.5s;
+}
+
+body.container-fluid {
+	font-family: 'Heebo', sans-serif;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.faded-link {
+	color: #590606;
+	transition-duration: var(--transition-duration);
+	font-weight: 700;
+}
+
+.faded-link:hover {
+	color: #350101;
+}
+
+#main-feed {
+	margin-top: 40px;
+}
+
+#useful-links > li {
+	margin-bottom: var(--small-padding);
+	border-radius: 7px;
+	transition-duration: var(--transition-duration);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+#useful-links > li:hover {
+	background-color: #F0F0F0;
+}
+
+.section {
+	margin-bottom: var(--big-padding);
+}
+
+.header {
+	text-transform: uppercase;
+}
+
+.header-big {
+	font-weight: 300;
+}
+
+.header-small {
+	font-family: 'Roboto Slab', serif;
+	font-size: 0.85rem;
+}
+
+#news .header-small {
+	margin-bottom: var(--big-padding);
+}
+
+.dash-item-wrapper {
+	margin-bottom: var(--big-padding);
+}
+
+.dash-item {
+	cursor: pointer;
+	transition-duration: var(--transition-duration);
+	margin-top: 10px;
+}
+
+.dash-item:hover {
+	transform: translateY(-2%);
+}
+
+.dash-item:hover .dash-item-caption {
+	background-color: rgba(255,255,255,0.95);
+}
+
+.dash-item-caption {
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 0;
+	
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	bottom: 0;
+	transition-duration: var(--transition-duration);
+}
+
+.dash-item-caption > .main-caption {
+	font-family: 'Heebo', sans-serif;
+	font-weight: 700;
+	color: #2A2A2A;
+}
+
+.dash-item-img {
+	width: 100%;
+	height: 300px;
+	background-image: url("../media/spinner.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+#eats-marketplace > .dash-item-img {
+	background-image: url("../media/marketplace.jpg");
+}
+
+#eats-summerfields > .dash-item-img {
+	background-image: url("../media/summies.jpg");
+}
+
+#eats-sc > .dash-item-img {
+	background-image: url("../media/sc.jpg");
+}
+
+
+#calendar {
+	margin-bottom: var(--big-padding);
+}
+
+.event {
+	/*margin: var(--small-padding) var(--medium-padding);*/
+	position: relative;
+}
+
+.event > * {
+	width: 100%;
+	padding: var(--small-padding) var(--medium-padding);
+}
+
+.event-details {
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	position: absolute;
+	bottom: 0;
+}
+
+.shadow {
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+}
+
+/*.film.dash-item-wrapper {
+	margin: var(--small-padding) var(--medium-padding);
+}
+*/
+.film > .dash-item {
+	margin-top: 0;
+}
+
+.dash-item-carousel {
+	margin: var(--small-padding) var(--medium-padding);
+}

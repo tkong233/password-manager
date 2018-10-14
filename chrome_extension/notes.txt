@@ -1,0 +1,10 @@
+- Browser Action:
+	- stays in tool bar
+	- accessible all times
+ 
+- Page Action:
+	- only works for specific pages
+
+- Neither BA or PA:
+	- runs in background
+
