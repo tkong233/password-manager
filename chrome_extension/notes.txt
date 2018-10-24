@@ -8,3 +8,5 @@
 - Neither BA or PA:
 	- runs in background
 
+
+initially, account and password are typed into popup, and I'll build the encryption & storage functionality first.

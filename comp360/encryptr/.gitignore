@@ -1,0 +1,16 @@
+platforms/*
+plugins/*
+www/css/fonts
+node_modules
+www/js/Encryptr.js
+www/js/Encryptr.min.js
+www/components/**/*
+components/**/*
+!www/components/.gitignore
+!components/.gitignore
+www/js/Encryptr-tests.js
+www/js/Encryptr-templates.js
+desktopbuilds/*
+cache
+build.json
+icon.png
