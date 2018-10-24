@@ -1,2 +1,0 @@
--r requirements-base.txt
-MySQL-python>=1.2,<1.3
