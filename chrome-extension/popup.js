@@ -1,5 +1,5 @@
 const password = '123456'
-// const username = 'tkong'
+const username = 'tkong'
 // const website = 'www.wesleyan.edu'
 
 console.log(password)
@@ -47,7 +47,10 @@ window.crypto.subtle.generateKey(
 		)
 		.then(function(encrypted){
 		    //returns an ArrayBuffer containing the encrypted data
-		    console.log(ab2str(new Uint8Array(encrypted)));
+		    var encrypted_password = ab2str(new Uint8Array(encrypted));
+		    console.log(encrypted_password);
+		    //store to local storage
+		    localStorage.setItem(username, encrypted_password);
 		})
 		.catch(function(err){
 		    console.error(err);
@@ -59,3 +62,20 @@ window.crypto.subtle.generateKey(
 .catch(function(err){
     console.error(err);
 });
+
+
+// window.crypto.subtle.decrypt(
+//     {
+//         name: "RSA-OAEP",
+//         //label: Uint8Array([...]) //optional
+//     },
+//     privateKey, //from generateKey or importKey above
+//     data //ArrayBuffer of the data
+// )
+// .then(function(decrypted){
+//     //returns an ArrayBuffer containing the decrypted data
+//     console.log(new Uint8Array(decrypted));
+// })
+// .catch(function(err){
+//     console.error(err);
+// });

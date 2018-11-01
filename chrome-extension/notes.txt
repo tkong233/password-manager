@@ -9,4 +9,4 @@
 	- runs in background
 
 
-initially, account and password are typed into popup, and I'll build the encryption & storage functionality first.
+- chrome.system.storage API vs chrome.localStorage API
