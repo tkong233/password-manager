@@ -8,5 +8,8 @@
 - Neither BA or PA:
 	- runs in background
 
+- chrome.system.storage vs chrome.localStorage  vs chrome.storage vs chrome.fileSystem 
 
-- chrome.system.storage API vs chrome.localStorage API
+- look for standard algorithm, store
+- outline of research paper
+- 
